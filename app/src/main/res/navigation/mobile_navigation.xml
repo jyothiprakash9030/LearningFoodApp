@@ -6,20 +6,25 @@
     app:startDestination="@+id/nav_home">
 
     <fragment
-        android:id="@+id/vvf"
+        android:id="@+id/nav_home"
         android:name="com.example.learningfoodapp.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_galler"
+        android:id="@+id/nav_daily_meal"
         android:name="com.example.learningfoodapp.ui.gallery.DailyMealFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_daily_meal" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_favourate"
         android:name="com.example.learningfoodapp.ui.slideshow.FavourateFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_favourate" />
+    <fragment
+        android:id="@+id/myCartFragment"
+        android:name="com.example.learningfoodapp.myCartFragment"
+        android:label="my_cart"
+        tools:layout="@layout/fragment_my_cart" />
 </navigation>

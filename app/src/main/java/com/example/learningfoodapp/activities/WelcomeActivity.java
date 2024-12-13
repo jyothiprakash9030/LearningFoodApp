@@ -1,4 +1,4 @@
-package com.example.learningfoodapp;
+package com.example.learningfoodapp.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,13 +10,15 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class RegistrationActivity extends AppCompatActivity {
+import com.example.learningfoodapp.R;
+
+public class WelcomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_registration);
+        setContentView(R.layout.activity_welcome);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -24,13 +26,9 @@ public class RegistrationActivity extends AppCompatActivity {
         });
     }
 
-    public void login(View view)
+    public void register(View view)
     {
-        startActivity(new Intent(RegistrationActivity.this,LoginActivity.class));
-    }
 
-    public void mainActivity(View view)
-    {
-        startActivity(new Intent(RegistrationActivity.this,MainActivity.class));
+        startActivity(new Intent(WelcomeActivity.this, RegistrationActivity.class));
     }
 }
