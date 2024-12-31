@@ -34,7 +34,7 @@
     <string name="sigh_here">Sigh here</string>
     <string name="my_cart">my cart</string>
     <string name="log_out">Log Out</string>
-<string name="DailyMeals">DailyMeals</string>
+    <string name="DailyMeals">DailyMeals</string>
     <string name="HelloAli">Hello Ali</string>
     <string name="search_your_Food">search your Food ?</string>
     <string name="what_do_you_want">what do yo want ?</string>
@@ -45,5 +45,6 @@
     <string name="_5_0">5.0</string>
     <string name="todo1">TODO</string>
     <string name="min_45">min- $45</string>
+    <string name="your_favourite_and_testy_food_is_here">your favourite and testy food is here</string>
 
 </resources>

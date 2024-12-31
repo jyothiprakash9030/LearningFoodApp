@@ -13,14 +13,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.learningfoodapp.R;
 import com.example.learningfoodapp.models.HomeVerModel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HomeVerAdapter  extends RecyclerView.Adapter<HomeVerAdapter.ViewHolder>
 {
 Context context;
-    List<HomeVerModel> list;
+    ArrayList<HomeVerModel> list;
 
-    public HomeVerAdapter(Context context, List<HomeVerModel> list) {
+    public HomeVerAdapter(Context context, ArrayList<HomeVerModel> list) {
         this.context = context;
         this.list = list;
     }
@@ -35,8 +36,7 @@ Context context;
     @Override
     public void onBindViewHolder(@NonNull HomeVerAdapter.ViewHolder holder, int position) {
         holder.imageView.setImageResource(list.get(position).getImage());
-        holder.name.setText(list.get(position).getName());
-
+//
     }
 
     @Override

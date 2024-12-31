@@ -13,35 +13,30 @@
         android:theme="@style/Theme.LearningFoodApp"
         tools:targetApi="31">
         <activity
+            android:name=".activities.DetailedDailyMealActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Floatingpage"
+            android:exported="false" />
+        <activity
             android:name=".activities.LoginActivity"
             android:exported="false" />
-
-
-
         <activity
             android:name=".activities.RegistrationActivity"
             android:exported="false" />
         <activity
             android:name=".activities.WelcomeActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-
-
-
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.LearningFoodApp.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.LearningFoodApp.NoActionBar" />
 
         <meta-data
             android:name="preloaded_fonts"
